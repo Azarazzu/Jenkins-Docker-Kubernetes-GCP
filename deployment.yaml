@@ -20,6 +20,8 @@ spec:
      image: azzu9394/k8s-jenkins:tagversion
      ports:
      - containerPort: 8080
+   imagePullSecrets:
+     - name: mykey
 
 ---
 apiVersion: v1
